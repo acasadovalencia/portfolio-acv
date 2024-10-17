@@ -1,6 +1,6 @@
 :root {
     --font-primary: "ClashDisplay-Variable", sans-serif;
-    --font-secondary: "League Gothic Condensed", sans-serif;
+    --font-secondary: "League Gothic", sans-serif;
     --font-c-primary: #EEEEEE;
     --font-c-secondary: #D5FF3F;
     --bg-c-primary: #131313;
@@ -140,4 +140,63 @@
     font-size: 1.0625rem;
     text-transform: uppercase;
     font-weight: 400;
+  }
+  .Section{
+    padding: 0 5rem;
+  }
+  .Hero{
+    height: calc(100vh - 92.44px);
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: flex-start;
+    align-items: center;
+  }
+  .Hero-wrapper{
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .Title-wrapper{
+    display: flex;
+    flex-flow: column-reverse nowrap;
+    justify-content: flex-start;
+    align-items: flex-start;
+    gap: 1rem;
+  }
+  .Hero-h1{
+    font-family: var(--font-secondary);
+    font-size: 12.5rem;
+    text-transform: uppercase;
+    line-height: 10rem;
+    font-weight: 400;
+  }
+  .Hero-h2{
+    font-size: 2rem;
+    font-weight: 300;
+    text-transform: uppercase;
+    color: var(--font-c-secondary);
+  }
+  .Photo-wrapper{
+    position: relative;
+  }
+  .Photo-picture{
+    background-color: red;
+    max-width: 306px;
+    height: 420px;
+    border-radius: 1.5rem;
+    transform: rotate(6.33deg);
+  }
+  .Photo-shadow{
+    position: absolute;
+    background-color: var(--bg-c-secondary);
+    height: 100%;
+    width: 100%;
+    top: 0;
+    left: 0;
+    transform: rotate(6.33deg) translate(-30px , 30px);
+    background-color: transparent;
+    border: 1px solid var(--font-c-secondary);
+    border-radius: 1.5rem;
+    z-index: -1;
   }
