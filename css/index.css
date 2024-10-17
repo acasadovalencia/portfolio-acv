@@ -1,5 +1,10 @@
 :root {
-    --font-c-primary: #fff;
+    --font-primary: "League Gothic Condensed", sans-serif;
+    --font-secondary: "ClashDisplay-Bold", sans-serif;
+    --font-c-primary: #EEEEEE;
+    --font-c-secondary: #D5FF3F;
+    --bg-c-primary: #131313;
+    --bg-c-secondary: #D5FF3F;
   }
   
   @media (prefers-color-scheme: dark) {
