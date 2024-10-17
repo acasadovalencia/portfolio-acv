@@ -1,6 +1,6 @@
 :root {
-    --font-primary: "League Gothic Condensed", sans-serif;
-    --font-secondary: "ClashDisplay-Bold", sans-serif;
+    --font-primary: "ClashDisplay-Variable", sans-serif;
+    --font-secondary: "League Gothic Condensed", sans-serif;
     --font-c-primary: #EEEEEE;
     --font-c-secondary: #D5FF3F;
     --bg-c-primary: #131313;
@@ -115,4 +115,29 @@
     -webkit-font-smoothing: antialiased;
     /* opcional */ 
     -moz-osx-font-smoothing: grayscale;
+    background-color: var(--bg-c-primary);
+    color: var(--font-c-primary);
+  }
+  .Header{
+    width: 100%;
+  }
+  .Header-wrapper{
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1.25rem 5rem;
+  }
+  .Nav{
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: flex-end;
+    align-items: center;
+    gap: 50px;
+  }
+  .Nav-li{
+    padding: 1rem 0;
+    font-size: 1.0625rem;
+    text-transform: uppercase;
+    font-weight: 400;
   }
