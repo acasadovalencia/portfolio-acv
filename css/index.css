@@ -128,7 +128,7 @@
     flex-flow: row nowrap;
     justify-content: space-between;
     align-items: center;
-    padding: 20px 80px;
+    padding: 1.25rem 5rem;
   }
   .Nav{
     display: flex;
@@ -138,10 +138,17 @@
     gap: 3.125rem;
   }
   .Nav-li{
-    padding: 16px 0;
-    font-size: 17px;
+    padding: 1rem 0;
+    font-size: 1.0625rem;
     text-transform: uppercase;
     font-weight: 400;
+  }
+  .Nav-link{
+    transition: all .5s EASE;
+  }
+  .Nav-link:hover{
+    font-weight: 600;
+    color: var(--font-c-secondary);
   }
   .Section{
     padding: 0 80px;
@@ -168,13 +175,13 @@
   }
   .Hero-h1{
     font-family: var(--font-secondary);
-    font-size: 200px;
+    font-size: 12.5rem;
     text-transform: uppercase;
-    line-height: 160px;
+    line-height: 10rem;
     font-weight: 400;
   }
   .Hero-h2{
-    font-size: 32px;
+    font-size: 2rem;
     font-weight: 300;
     text-transform: uppercase;
     color: var(--font-c-secondary);
@@ -186,7 +193,7 @@
     background-color: red;
     max-width: 19.125rem;
     height: 26.25rem;
-    border-radius: 24px;
+    border-radius: 1.5rem;
     transform: rotate(6.33deg);
   }
   .Photo-shadow{
@@ -199,16 +206,16 @@
     transform: rotate(6.33deg) translate(-1.875rem , 1.875rem);
     background-color: transparent;
     border: .0625rem solid var(--font-c-secondary);
-    border-radius: 24px;
+    border-radius: 1.5rem;
     z-index: -1;
   }
   .Projects-wrapper{
-    padding: 40px 0;
+    padding: 2.5rem 0;
   }
   .H2{
     text-transform: uppercase;
     font-family: var(--font-secondary);
-    font-size: 64px;
+    font-size: 4rem;
     font-weight: 400;
   }
   .H2::after{
@@ -218,8 +225,8 @@
   .Projects-ul{
     display: grid;
     grid-template-columns: repeat(3 , 1fr);
-    gap: 32px;
-    padding: 32px 0;
+    gap: 2rem;
+    padding: 2rem 0;
   }
   .Projects-li{
     background-color: red;
@@ -244,29 +251,29 @@
     flex-flow: row nowrap;
     justify-content: space-between;
     align-items: flex-start;
-    padding: 80px 0 208px;
+    padding: 5rem 0 13rem;
   }
   .Abilities-group{
     display: flex;
     flex-flow: column nowrap;
     justify-content: flex-start;
     align-items: flex-start;
-    gap: 32px;
+    gap: 2rem;
   }
   .Abilities-ul{
     display: flex;
     flex-flow: column nowrap;
     justify-content: flex-start;
     align-items: flex-start;
-    gap: 24px;
+    gap: 1.5rem;
   }
   .Abilities-h3{
-    font-size: 24px;
+    font-size: 1.5rem;
     font-weight: 600;
     color: var(--font-c-secondary);
   }
   .Abilities-h4{
-    font-size: 24px;
+    font-size: 1.5rem;
     font-weight: 400;
   }
   .Abilities-li{
@@ -274,27 +281,30 @@
     flex-flow: row nowrap;
     justify-content: flex-start;
     align-items: center;
-    gap: 8px;
+    gap: .5rem;
+  }
+  .About-h2{
+    padding: 2.5rem 0;
   }
   .About-wrapper{
-    padding: 32px 0 71px;
+    padding: 0 0 4.4375rem;
     display: flex;
     flex-flow: row nowrap;
     justify-content: space-between;
     align-items: center;
-    gap: 88px;
+    gap: 5.5rem;
   }
   .About-paragraph{
-    font-size: 24px;
+    font-size: 1.5rem;
     font-weight: 400;
   }
   .About-picture{
     height: 100%;
-    min-width: 437px;
+    min-width: 27.3125rem;
   }
   .About-img{
     object-fit: cover;
-    border-radius: 10px;
+    border-radius: .625rem;
   }
   .Footer{
     background-color: var(--bg-c-secondary);
