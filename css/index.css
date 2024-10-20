@@ -213,3 +213,27 @@
     content: ".";
     color: var(--font-c-secondary);
   }
+  .Projects-ul{
+    display: grid;
+    grid-template-columns: repeat(3 , 1fr);
+    gap: 2rem;
+    padding: 2rem 0;
+  }
+  .Projects-li{
+    background-color: red;
+  }
+  .Projects-li:first-child{
+    grid-column: span 2;
+  }
+  .Projects-li:nth-child(4){
+    grid-column: span 2;
+  }
+  .Projects-li:nth-child(5){
+    grid-column: span 2;
+  }
+  .Projects-picture{
+    height: 100%;
+  }
+  .Projects-img{
+    height: 100%;
+  }
