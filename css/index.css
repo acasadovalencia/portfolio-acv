@@ -200,3 +200,16 @@
     border-radius: 1.5rem;
     z-index: -1;
   }
+  .Projects-wrapper{
+    padding: 2.5rem 0;
+  }
+  .H2{
+    text-transform: uppercase;
+    font-family: var(--font-secondary);
+    font-size: 4rem;
+    font-weight: 400;
+  }
+  .H2::after{
+    content: ".";
+    color: var(--font-c-secondary);
+  }
