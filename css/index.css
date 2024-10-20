@@ -297,6 +297,7 @@
   .About-paragraph{
     font-size: 1.5rem;
     font-weight: 400;
+    line-height: 2rem;
   }
   .About-picture{
     height: 100%;
