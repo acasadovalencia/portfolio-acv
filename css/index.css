@@ -3,6 +3,7 @@
     --font-secondary: "League Gothic", sans-serif;
     --font-c-primary: #EEEEEE;
     --font-c-secondary: #D5FF3F;
+    --font-c-tertiary: #131313;
     --bg-c-primary: #131313;
     --bg-c-secondary: #D5FF3F;
   }
@@ -105,7 +106,7 @@
   
   body {
     min-height: 100vh;
-    font-size: 1.125rem;
+    font-size: 18px;
     font-family: var(--font-primary);
     font-weight: 600;
     -webkit-hyphens: auto;
@@ -126,26 +127,26 @@
     flex-flow: row nowrap;
     justify-content: space-between;
     align-items: center;
-    padding: 1.25rem 5rem;
+    padding: 20px 80px;
   }
   .Nav{
     display: flex;
     flex-flow: row nowrap;
     justify-content: flex-end;
     align-items: center;
-    gap: 50px;
+    gap: 3.125rem;
   }
   .Nav-li{
-    padding: 1rem 0;
-    font-size: 1.0625rem;
+    padding: 16px 0;
+    font-size: 17px;
     text-transform: uppercase;
     font-weight: 400;
   }
   .Section{
-    padding: 0 5rem;
+    padding: 0 80px;
   }
   .Hero{
-    height: calc(100vh - 92.44px);
+    height: calc(100vh - 5.7775rem);
     display: flex;
     flex-flow: row nowrap;
     justify-content: flex-start;
@@ -162,17 +163,17 @@
     flex-flow: column-reverse nowrap;
     justify-content: flex-start;
     align-items: flex-start;
-    gap: 1rem;
+    gap: 16px;
   }
   .Hero-h1{
     font-family: var(--font-secondary);
-    font-size: 12.5rem;
+    font-size: 200px;
     text-transform: uppercase;
-    line-height: 10rem;
+    line-height: 160px;
     font-weight: 400;
   }
   .Hero-h2{
-    font-size: 2rem;
+    font-size: 32px;
     font-weight: 300;
     text-transform: uppercase;
     color: var(--font-c-secondary);
@@ -182,9 +183,9 @@
   }
   .Photo-picture{
     background-color: red;
-    max-width: 306px;
-    height: 420px;
-    border-radius: 1.5rem;
+    max-width: 19.125rem;
+    height: 26.25rem;
+    border-radius: 24px;
     transform: rotate(6.33deg);
   }
   .Photo-shadow{
@@ -194,19 +195,19 @@
     width: 100%;
     top: 0;
     left: 0;
-    transform: rotate(6.33deg) translate(-30px , 30px);
+    transform: rotate(6.33deg) translate(-1.875rem , 1.875rem);
     background-color: transparent;
-    border: 1px solid var(--font-c-secondary);
-    border-radius: 1.5rem;
+    border: .0625rem solid var(--font-c-secondary);
+    border-radius: 24px;
     z-index: -1;
   }
   .Projects-wrapper{
-    padding: 2.5rem 0;
+    padding: 40px 0;
   }
   .H2{
     text-transform: uppercase;
     font-family: var(--font-secondary);
-    font-size: 4rem;
+    font-size: 64px;
     font-weight: 400;
   }
   .H2::after{
@@ -216,8 +217,8 @@
   .Projects-ul{
     display: grid;
     grid-template-columns: repeat(3 , 1fr);
-    gap: 2rem;
-    padding: 2rem 0;
+    gap: 32px;
+    padding: 32px 0;
   }
   .Projects-li{
     background-color: red;
@@ -242,29 +243,29 @@
     flex-flow: row nowrap;
     justify-content: space-between;
     align-items: flex-start;
-    padding: 5rem 0 13rem;
+    padding: 80px 0 208px;
   }
   .Abilities-group{
     display: flex;
     flex-flow: column nowrap;
     justify-content: flex-start;
     align-items: flex-start;
-    gap: 2rem;
+    gap: 32px;
   }
   .Abilities-ul{
     display: flex;
     flex-flow: column nowrap;
     justify-content: flex-start;
     align-items: flex-start;
-    gap: 1.5rem;
+    gap: 24px;
   }
   .Abilities-h3{
-    font-size: 1.5rem;
+    font-size: 24px;
     font-weight: 600;
     color: var(--font-c-secondary);
   }
   .Abilities-h4{
-    font-size: 1.5rem;
+    font-size: 24px;
     font-weight: 400;
   }
   .Abilities-li{
@@ -272,25 +273,63 @@
     flex-flow: row nowrap;
     justify-content: flex-start;
     align-items: center;
-    gap: .5rem;
+    gap: 8px;
   }
   .About-wrapper{
-    padding: 2rem 0 4.4375rem;
+    padding: 32px 0 71px;
     display: flex;
     flex-flow: row nowrap;
     justify-content: space-between;
     align-items: center;
-    gap: 5.5rem;
+    gap: 88px;
   }
   .About-paragraph{
-    font-size: 1.5rem;
+    font-size: 24px;
     font-weight: 400;
   }
   .About-picture{
     height: 100%;
-    min-width: 27.3125rem;
+    min-width: 437px;
   }
   .About-img{
     object-fit: cover;
-    border-radius: .625rem;
+    border-radius: 10px;
+  }
+  .Footer{
+    background-color: var(--bg-c-secondary);
+    color: var(--font-c-tertiary);
+  }
+  .Footer-wrapper{
+    padding: 5rem;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+    align-items: flex-end;
+  }
+  .Contact-wrapper{
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: flex-start;
+    align-items: flex-start;
+    gap: 1.5rem;
+  }
+  .Footer-h5{
+    font-size: 4rem;
+    font-weight: 400;
+    font-family: var(--font-secondary);
+  }
+  .Footer-span{
+    font-weight: 400;
+    font-size: 1.5rem∫;
+  }
+  .Social-ul{
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: flex-end;
+    align-items: flex-end;
+    gap: 2rem;
+  }
+  .Social-a{
+    background-color: var(--bg-c-primary);
+    padding: .9375rem;
   }
