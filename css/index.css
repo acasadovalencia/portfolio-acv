@@ -6,6 +6,7 @@
     --font-c-tertiary: #131313;
     --bg-c-primary: #131313;
     --bg-c-secondary: #D5FF3F;
+    --bg-c-tertiary: #EEEEEE;
   }
   
   @media (prefers-color-scheme: dark) {
@@ -332,4 +333,16 @@
   .Social-a{
     background-color: var(--bg-c-primary);
     padding: .9375rem;
+    border: 1px solid var(--bg-c-primary);
+    transition: background-color .5s ease;
+  }
+  .Social-a:hover{
+    background-color: var(--bg-c-tertiary);
+  }
+  .Social-svg > path{
+    transition: fill .5s ease;
+  }
+  .Social-a:hover .Social-svg > path{
+    fill: var(--font-c-tertiary);
+
   }
