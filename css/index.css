@@ -291,7 +291,7 @@
     justify-content: center;
     align-items: center;
     opacity: 0;
-    pointer-events: 0;
+    pointer-events: none;
     transition: opacity .5s ease;
   }
   .Projects-li:hover .Project-wrapper{
@@ -414,7 +414,7 @@
   }
   .Footer-span{
     font-weight: 400;
-    font-size: 1.5rem∫;
+    font-size: 1.5rem;
   }
   .Social-ul{
     display: flex;
