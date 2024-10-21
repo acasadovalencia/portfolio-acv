@@ -127,7 +127,11 @@
   }
   .Header{
     width: 100%;
+    position: fixed;
+    z-index: 1;
+    background-color: #131313;
   }
+
   .Header-wrapper{
     display: flex;
     flex-flow: row nowrap;
@@ -149,17 +153,24 @@
     font-weight: 400;
   }
   .Nav-link{
-    transition: all .5s EASE;
+    transition: all .5s ease;
   }
   .Nav-link:hover{
+    color: var(--font-c-secondary);
+  }
+  .Nav-link.onView{
     font-weight: 600;
+    color: var(--font-c-secondary);
+  }
+  .Nav-link.onView::after{
+    content: ".";
     color: var(--font-c-secondary);
   }
   .Section{
     padding: 0 80px;
   }
   .Hero{
-    height: calc(100vh - 5.7775rem);
+    height: 100vh;
     display: flex;
     flex-flow: row nowrap;
     justify-content: flex-start;
@@ -176,7 +187,7 @@
     flex-flow: column-reverse nowrap;
     justify-content: flex-start;
     align-items: flex-start;
-    gap: 16px;
+    gap: 1rem;
   }
   .Hero-h1{
     font-family: var(--font-secondary);
@@ -218,7 +229,7 @@
     z-index: -1;
   }
   .Projects-wrapper{
-    padding: 2.5rem 0;
+    padding: 5.775rem 0;
   }
   .H2{
     text-transform: uppercase;
@@ -322,7 +333,7 @@
     flex-flow: row nowrap;
     justify-content: space-between;
     align-items: flex-start;
-    padding: 5rem 0 13rem;
+    padding: 5rem 0 5rem;
   }
   .Abilities-group{
     display: flex;
@@ -355,7 +366,7 @@
     gap: .5rem;
   }
   .About-h2{
-    padding: 2.5rem 0;
+    padding: 0 0 5.775rem;
   }
   .About-wrapper{
     padding: 0 0 4.4375rem;
