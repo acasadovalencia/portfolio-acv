@@ -333,7 +333,7 @@
     flex-flow: row nowrap;
     justify-content: space-between;
     align-items: flex-start;
-    padding: 5rem 0 5rem;
+    padding: 5rem 0 0;
   }
   .Abilities-group{
     display: flex;
@@ -366,7 +366,7 @@
     gap: .5rem;
   }
   .About-h2{
-    padding: 0 0 5.775rem;
+    padding: 5.775rem 0;
   }
   .About-wrapper{
     padding: 0 0 4.4375rem;
