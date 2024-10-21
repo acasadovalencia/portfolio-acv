@@ -190,11 +190,14 @@
     position: relative;
   }
   .Photo-picture{
-    background-color: red;
-    max-width: 19.125rem;
+    min-width: 19.125rem;
     height: 26.25rem;
     border-radius: 1.5rem;
     transform: rotate(6.33deg);
+  }
+  .Photo-img{
+    border-radius: 1.5rem;
+    object-fit: cover;
   }
   .Photo-shadow{
     position: absolute;
