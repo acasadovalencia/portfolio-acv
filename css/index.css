@@ -8,6 +8,10 @@
     --bg-c-secondary: #D5FF3F;
     --bg-c-tertiary: #EEEEEE;
     --bg-c-kudi: #9C27F7;
+    --bg-c-digital: #8681E8;
+    --bg-c-brands: #49812C;
+    --bg-c-offday: #D0CA13;
+    --bg-c-triage: #FF2C55;
   }
   
   @media (prefers-color-scheme: dark) {
@@ -236,7 +240,19 @@
     position: relative;
   }
   .Projects-li:first-child > .Project-wrapper{
-    background-color: #9C27F7;
+    background-color: var(--bg-c-kudi);
+  }
+  .Projects-li:nth-child(2) > .Project-wrapper{
+    background-color: var(--bg-c-digital);
+  }
+  .Projects-li:nth-child(3) > .Project-wrapper{
+    background-color: var(--bg-c-brands);
+  }
+  .Projects-li:nth-child(4) > .Project-wrapper{
+    background-color: var(--bg-c-offday);
+  }
+  .Projects-li:nth-child(5) > .Project-wrapper{
+    background-color: var(--bg-c-triage);
   }
   .Projects-li:first-child{
     grid-column: span 2;
