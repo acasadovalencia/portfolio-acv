@@ -166,6 +166,10 @@
     content: ".";
     color: var(--font-c-secondary);
   }
+  .Btn-wrapper{
+    padding: 1.25rem;
+    display: none;
+  }
   .Section{
     padding: 0 80px;
   }
@@ -437,4 +441,13 @@
   }
   .Social-a:hover .Social-svg > path{
     fill: var(--font-c-tertiary);
+  }
+
+  @media (max-width:768px){
+    .Nav{
+      display: none;
+    }
+    .Btn-wrapper{
+      display: block;
+    }
   }
