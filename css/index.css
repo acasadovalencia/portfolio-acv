@@ -542,6 +542,7 @@
   @media (max-width: 680px){
     .Projects-ul{
       grid-template-columns: 1fr;
+      padding: 2rem 0 2.5rem;
     }
     .Projects-li:first-child{
       grid-column: unset;
