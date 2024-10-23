@@ -460,6 +460,7 @@
       height: 21.4375rem;
     }
   }
+
   @media (max-width:1024px){
     .Header-wrapper{
       padding: 1rem;
@@ -475,14 +476,29 @@
   @media (max-width:920px){
     .Hero-wrapper{
       flex-direction: column-reverse;
-
-      gap: 5rem
+      gap: 5rem;
+      padding: 5.3125rem 0 0;
     }
     .Title-wrapper{
       text-align: center;
     }
     .Hero-h2{
       width: 100%;
+    }
+    .Photo-wrapper{
+      transform: rotate(0);
+    }
+    .Photo-picture{
+      height: 100%;
+    }
+    .Photo-img{
+      border-radius: 100%;
+      height: 100%;
+    }
+    .Photo-shadow{
+      border-radius: 50%;
+      transform: translate(0 , 0) scale(1.15);
+      
     }
   }
 
@@ -492,5 +508,24 @@
     }
     .Btn-wrapper{
       display: block;
+    }
+    .H2{
+      text-align: center;
+    }
+  }
+
+  @media (max-width: 680px){
+    .Abilities-container{
+      flex-direction: column;
+      align-items: center;
+      gap: 2.5rem;
+    }
+    .Abilities-group{
+      width: 100%;
+      align-items: center;
+    }
+    .Abilities-ul{
+      width: 100%;
+      align-items: center;
     }
   }
