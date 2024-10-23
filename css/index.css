@@ -11,6 +11,9 @@
     --bg-c-digital: #8681E8;
     --bg-c-brands: #49812C;
     --bg-c-offday: #D0CA13;
+    --bg-c-sunnyside: #3EBFFC;
+    --bg-c-loopstudios: #C56AD0;
+    --bg-c-countries: #F25B25;
     --bg-c-triage: #FF2C55;
   }
   
@@ -269,6 +272,15 @@
     background-color: var(--bg-c-offday);
   }
   .Projects-li:nth-child(5) > .Project-wrapper{
+    background-color: var(--bg-c-sunnyside);
+  }
+  .Projects-li:nth-child(6) > .Project-wrapper{
+    background-color: var(--bg-c-loopstudios);
+  }
+  .Projects-li:nth-child(7) > .Project-wrapper{
+    background-color: var(--bg-c-countries);
+  }
+  .Projects-li:nth-child(8) > .Project-wrapper{
     background-color: var(--bg-c-triage);
   }
   .Projects-li:first-child{
@@ -278,6 +290,9 @@
     grid-column: span 2;
   }
   .Projects-li:nth-child(5){
+    grid-column: span 2;
+  }
+  .Projects-li:nth-child(8){
     grid-column: span 2;
   }
   .Projects-picture{
