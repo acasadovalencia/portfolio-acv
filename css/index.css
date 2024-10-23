@@ -131,13 +131,13 @@
     z-index: 1;
     background-color: #131313;
   }
-
   .Header-wrapper{
     display: flex;
     flex-flow: row nowrap;
     justify-content: space-between;
     align-items: center;
     padding: 1.25rem 5rem;
+    width: 100%;
   }
   .Nav{
     display: flex;
@@ -498,7 +498,17 @@
     .Photo-shadow{
       border-radius: 50%;
       transform: translate(0 , 0) scale(1.15);
-      
+    }
+    .About-wrapper{
+      flex-direction: column-reverse;
+    }
+    .About-picture{
+      height: 100%;
+    }
+    .About-img{
+      margin: 0 auto;
+      height: 100%;
+      max-width: 21.4375rem;
     }
   }
 
@@ -515,6 +525,18 @@
   }
 
   @media (max-width: 680px){
+    .Projects-ul{
+      grid-template-columns: 1fr;
+    }
+    .Projects-li:first-child{
+      grid-column: unset;
+    }
+    .Projects-li:nth-child(4){
+      grid-column: unset;
+    }
+    .Projects-li:nth-child(5){
+      grid-column: unset;
+    }
     .Abilities-container{
       flex-direction: column;
       align-items: center;
@@ -527,5 +549,46 @@
     .Abilities-ul{
       width: 100%;
       align-items: center;
+    }
+    .Footer-wrapper{
+      flex-direction: column;
+      padding: 1.5rem 1rem;
+      align-items: flex-start;
+      gap: 1.5rem;
+    }
+  }
+  @media (max-width:620px){
+    .Hero-h1{
+      font-size: 8.75rem;
+      line-height: .9;
+    }
+    .Hero-h2{
+      font-size: 1.5rem;
+    }
+  }
+  @media (max-width: 560px){
+    .About-picture{
+      min-width: initial;
+    }
+    .About-img{
+      margin: 0;
+      max-width: initial;
+      width: 100%;
+
+    }
+  }
+
+  @media (max-width: 480px){
+    .Hero-h1{
+      font-size: 6.625rem;
+    }
+    .About-paragraph{
+      font-size: 1.0625rem;
+    }
+    .Footer-h5{
+      font-size: 2rem;
+    }
+    .Footer-span{
+      font-size: 1.0625rem;
     }
   }
