@@ -491,8 +491,12 @@
   @media (max-width:920px){
     .Hero-wrapper{
       flex-direction: column-reverse;
-      gap: 5rem;
+      gap: 3.125rem;
       padding: 5.3125rem 0 0;
+    }
+    .Hero-h1{
+      font-size: 9rem;
+      line-height: .8;
     }
     .Title-wrapper{
       text-align: center;
@@ -609,5 +613,15 @@
     }
     .Footer-span{
       font-size: 1.0625rem;
+    }
+  }
+  @media (max-width:370px){
+    .Hero-h1{
+      font-size: 6rem;
+    }
+  }
+  @media (max-width:350px){
+    .Hero-h1{
+      font-size: 5.5rem;
     }
   }
