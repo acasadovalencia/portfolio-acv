@@ -176,11 +176,12 @@
     width: 100%;
   }
   .Hero{
-    min-height: 100vh;
+    min-height: calc((100vh - 93px));
     display: flex;
     flex-flow: row nowrap;
     justify-content: flex-start;
     align-items: center;
+    margin: 93px 0 0;
   }
   .Hero-wrapper{
     width: 100%;
@@ -485,6 +486,10 @@
     .Title-wrapper{
       text-align: center;
     }
+    .Hero-h1{
+      font-size: 9rem;
+      line-height: .8;
+    }
     .Section{
       padding: 0 1rem;
     }
@@ -502,10 +507,7 @@
   }
 
   @media (max-width:920px){
-    .Hero-h1{
-      font-size: 9rem;
-      line-height: .8;
-    }
+    
     .Title-wrapper{
       text-align: center;
     }

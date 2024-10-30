@@ -31,7 +31,7 @@ const handleScroll = ()=>{
         header.classList.remove('scroll')
     }
 
-    if(heroPosition.top <= 30 && heroPosition.bottom >= 30){
+    if(heroPosition.top <= 100 && heroPosition.bottom >= 30){
         heroLink.classList.add('onView')
     } else {
         heroLink.classList.remove('onView')
