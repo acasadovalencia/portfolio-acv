@@ -479,13 +479,25 @@
       padding: 1rem;
     }
     .Hero-wrapper{
-      padding: 0 1.5rem 0 0;
+      flex-direction: column-reverse;
+      gap: 3.125rem;
     }
     .Hero-section{
       min-height: calc(100vh - 5.5rem);
     }
+    .Title-wrapper{
+      text-align: center;
+    }
     .Section{
       padding: 0 1rem;
+    }
+    .Photo-wrapper{
+      transform: rotate(0);
+      border: solid 1px var(--bg-c-secondary);
+      border-radius: 1.5rem;
+    }
+    .Photo-wrapper::before{
+      display: none;
     }
     .Footer-wrapper{
       padding: 5rem 1rem;
@@ -493,11 +505,6 @@
   }
 
   @media (max-width:920px){
-    .Hero-wrapper{
-      flex-direction: column;
-      gap: 3.125rem;
-      padding: 5.3125rem 0 0;
-    }
     .Hero-h1{
       font-size: 9rem;
       line-height: .8;
@@ -612,12 +619,10 @@
   @media (max-width:620px){
     .Hero-h1{
       font-size: 8.75rem;
-      line-height: .9;
-    }
-    .Hero-h2{
-      font-size: 1.5rem;
+      line-height: .8;
     }
   }
+
   @media (max-width: 560px){
     .About-picture{
       min-width: initial;
@@ -643,7 +648,10 @@
 
   @media (max-width: 480px){
     .Hero-h1{
-      font-size: 6.625rem;
+      font-size: 8rem;
+    }
+    .Hero-h2{
+      font-size: 1.75rem;
     }
     .About-paragraph{
       font-size: 1.0625rem;
@@ -655,9 +663,29 @@
       font-size: 1.0625rem;
     }
   }
-  @media (max-width:370px){
+  @media (max-width: 440px){
+    .Hero-h1{
+      font-size: 108px;
+    }
+    .Hero-h2{
+      font-size: 24px;
+    }
+    .About-paragraph{
+      font-size: 1.0625rem;
+    }
+    .Footer-h5{
+      font-size: 2rem;
+    }
+    .Footer-span{
+      font-size: 1.0625rem;
+    }
+  }
+  @media (max-width:373px){
     .Hero-h1{
       font-size: 6rem;
+    }
+    .Hero-h2{
+      font-size: 20px;
     }
   }
   @media (max-width:350px){
