@@ -528,8 +528,21 @@
   }
 
   @media (max-width:768px){
+    .Header-nav{
+      position: fixed;
+      top: 0;
+      left: 0;
+      height: 100%;
+      width: 100%;
+      background-color: blue;
+      z-index: -1;
+    }
     .Nav{
-      display: none;
+      flex-direction: column;
+      justify-content: center;
+      align-items: flex-start;
+      height: 100%;
+      padding: 0 1rem;
     }
     .Btn-wrapper{
       display: block;
@@ -647,7 +660,7 @@
       font-size: 1.0625rem;
     }
   }
-  
+
   @media (max-width: 440px){
     .Hero-h1{
       font-size: 108px;
