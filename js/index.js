@@ -36,11 +36,13 @@ const handleScroll = ()=>{
     } else {
         heroLink.classList.remove('onView')
     }
+
     if(projectsPosition.top <= 30 && projectsPosition.bottom > 30){
         projectsLink.classList.add('onView')
     } else {
         projectsLink.classList.remove('onView')
     }
+    
     if(aboutPosition.top <= 30 && aboutPosition.bottom > 30){
         aboutLink.classList.add('onView')
     } else {

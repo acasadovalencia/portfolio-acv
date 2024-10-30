@@ -25,6 +25,7 @@
       transition: none !important;
     }
   }
+
   * {
     margin: 0;
     padding: 0;
@@ -507,7 +508,6 @@
   }
 
   @media (max-width:920px){
-    
     .Title-wrapper{
       text-align: center;
     }
@@ -647,6 +647,7 @@
       font-size: 1.0625rem;
     }
   }
+  
   @media (max-width: 440px){
     .Hero-h1{
       font-size: 108px;
@@ -664,6 +665,7 @@
       font-size: 1.0625rem;
     }
   }
+
   @media (max-width:373px){
     .Hero-h1{
       font-size: 6rem;
@@ -672,6 +674,7 @@
       font-size: 20px;
     }
   }
+
   @media (max-width:350px){
     .Hero-h1{
       font-size: 5.5rem;
