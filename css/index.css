@@ -188,6 +188,7 @@
     z-index: 1;
     background-color: #131313;
     top: 0;
+    left: 0;
   }
   .Header-wrapper{
     display: flex;
@@ -600,9 +601,12 @@
   }
 
   @media (max-width:768px){
+    .Header{
+      overflow-x: hidden;
+    }
     .Header-nav{
       position: fixed;
-      top: 0;
+      top:5.5rem;
       left: 0;
       height: 100%;
       width: 100%;
@@ -632,7 +636,7 @@
     }
     .Nav{
       flex-direction: column;
-      justify-content: center;
+      justify-content: flex-start;
       align-items: flex-start;
       height: 100%;
       padding: 0 1rem;
