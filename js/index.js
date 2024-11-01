@@ -10,6 +10,7 @@ const aboutLink = document.querySelectorAll('.Nav-link')[2]
 const navLinks = document.querySelectorAll('.Nav-link')
 const headerNav = document.querySelector('.Header-nav')
 const navBtn = document.querySelector('.Nav-btn')
+const closeBtn = document.querySelector('.Close-btn')
 
 navLinks.forEach(link => {
     link.addEventListener('click', (e) => {
@@ -54,11 +55,15 @@ const handleScroll = ()=>{
 }
 
 const openNav = ()=>{
-    console.log('pulso')
-    headerNav.classList.toggle('isActive')
+    headerNav.classList.add('isActive')
+}
+
+const closeNav = ()=>{
+    headerNav.classList.remove('isActive')
 }
 
 navBtn.addEventListener('click' , openNav)
+closeBtn.addEventListener('click' , closeNav)
 
 window.addEventListener('scroll', handleScroll);
 
