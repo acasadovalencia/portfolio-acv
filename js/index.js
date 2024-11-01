@@ -8,6 +8,8 @@ const heroLink = document.querySelectorAll('.Nav-link')[0]
 const projectsLink = document.querySelectorAll('.Nav-link')[1]
 const aboutLink = document.querySelectorAll('.Nav-link')[2]
 const navLinks = document.querySelectorAll('.Nav-link')
+const headerNav = document.querySelector('.Header-nav')
+const navBtn = document.querySelector('.Nav-btn')
 
 navLinks.forEach(link => {
     link.addEventListener('click', (e) => {
@@ -17,6 +19,7 @@ navLinks.forEach(link => {
         const targetSection = document.querySelector(linkClicked)
 
         targetSection.scrollIntoView({ behavior: 'smooth' })
+        headerNav.classList.remove('isActive')
     })
 })
 
@@ -49,5 +52,13 @@ const handleScroll = ()=>{
         aboutLink.classList.remove('onView')
     }
 }
+
+const openNav = ()=>{
+    console.log('pulso')
+    headerNav.classList.toggle('isActive')
+}
+
+navBtn.addEventListener('click' , openNav)
+
 window.addEventListener('scroll', handleScroll);
 
