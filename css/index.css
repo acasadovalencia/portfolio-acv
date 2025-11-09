@@ -11,7 +11,7 @@
     --bg-c-digital: #8681E8;
     --bg-c-brands: #49812C;
     --bg-c-offday: #D0CA13;
-    --bg-c-sunnyside: #3EBFFC;
+    --bg-c-infinity: #10b2be;
     --bg-c-loopstudios: #C56AD0;
     --bg-c-countries: #F25B25;
     --bg-c-triage: #FF2C55;
@@ -338,7 +338,7 @@
     position: relative;
   }
   .Projects-li:first-child > .Project-wrapper{
-    background-color: var(--bg-c-kudi);
+    background-color: var(--bg-c-infinity);
   }
   .Projects-li:nth-child(2) > .Project-wrapper{
     background-color: var(--bg-c-digital);
@@ -350,7 +350,7 @@
     background-color: var(--bg-c-offday);
   }
   .Projects-li:nth-child(5) > .Project-wrapper{
-    background-color: var(--bg-c-sunnyside);
+    background-color: var(--bg-c-kudi);
   }
   .Projects-li:nth-child(6) > .Project-wrapper{
     background-color: var(--bg-c-loopstudios);
